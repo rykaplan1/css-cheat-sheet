@@ -31,7 +31,7 @@ In service of meeting these requirements while having readable code, the website
 N/A
 
 ## Usage
-This page can be viewed at: github.rykaplan1.io/css-cheat-sheet
+This page can be viewed at: 
 ![A screenshot of the webpage](assets/images/screenshot.jpg)
 
 
