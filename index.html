@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Snippet Cheatsheet</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">CSS Cheat Sheet</h1>
+      <p>
+        A useful tool for keeping track of common CSS tricks. Click any snippet of code and it will automatically select all of it for you to copy!
+      </p>
+    </header>
+
+    <main>
+      <figure class="card">
+        <h2 class="card-title">Flexbox Row</h2>
+        <figcaption>Use these properties to create a Flexbox row layout.</figcaption>
+        <pre class="css-markup"><code>.row {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}</code></pre>
+      </figure>
+      <figure class="card">
+        <h2 class="card-title">Flexbox Column</h2>
+        <figcaption>Use these properties to create a Flexbox column layout.</figcaption>
+        <pre class="css-markup"><code>.column {
+display: flex;
+flex-direction: column;
+}</code></pre>
+      </figure>
+      <figure class="card">
+        <h2 class="card-title">CSS Grid Layout</h2>
+        <figcaption>Build a 12-column layout using CSS Grid.</figcaption>
+        <pre class="css-markup"><code>.grid{
+display: grid;
+width: 100%;
+grid-template-columns: 
+  repeat(12, 1fr);
+}</code></pre>
+      </figure>
+      <figure class="card">
+        <h2 class="card-title">Linear Gradients</h2>
+        <figcaption>This will create a background linear gradient from top to bottom.</figcaption>
+        <pre class="css-markup"><code>.linear-gradient-background {
+background-image: linear-gradient(
+  rgba(232, 102, 236, 0.3) 0%,
+  rgba(232, 102, 236, 0.6) 100%
+);
+}</code></pre>
+      </figure>
+      <figure class="card">
+        <h2 class="card-title">Box Transition Glow</h2>
+        <figcaption>Use transition and box shadows to glow on hover.</figcaption>
+        <pre class="css-markup"><code>.code-card .card-header {
+border-radius: 8px;
+transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover, 
+.code-card:hover .card-header {
+box-shadow: inset 0px 0px 8px 
+rgba(232, 102, 236, 1), 
+0 0 15px rgba(232, 102, 236, 1);
+}</code></pre>
+      </figure>
+      <figure class="card">
+        <h2 class="card-title">Overlay Card with Title</h2>
+        <figcaption>Use position properties properties and negative margins to raise elements higher than their natural starting point.</figcaption>
+        <pre class="css-markup"><code>.card-header {
+position: relative;
+margin-top: -20px;
+}</code></pre>
+      </figure>
+
+    </main>
+
+    <footer>
+      <h3>Help with CSS, brought to you by CSS</h3>
+    </footer>
+  </body>
+
+</html>

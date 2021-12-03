@@ -1,0 +1,112 @@
+* {
+  font-family: Helvetica, sans-serif;
+}
+
+:root {
+  --main-background-color: #3e3f42;
+  --main-text-color: #5cb6ff;
+  --secondary-text-and-border-color: lightgray;
+  --code-text-color: whitesmoke;
+  --code-background-image: linear-gradient(
+    #5cb6ff4d 0%, 
+    #5cb6ff99 100%
+  );
+}
+
+body {
+  background-color: var(--main-background-color);
+  padding: 10px;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+
+header, footer {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 10px;
+}
+
+h2 {
+  border: 2px solid var(--secondary-text-and-border-color);
+  border-radius: 8px;
+  position: relative;
+  margin-top: -30px;
+  padding: 10px;
+  font-size: 1.3rem;
+  background-color: var(--main-background-color);
+  margin-bottom: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h1, h2, h3 {
+  color: var(--main-text-color);
+}
+
+p {
+  color: var(--secondary-text-and-border-color);
+}
+
+pre {
+  white-space: pre-wrap;
+  color: var(--code-text-color);
+  background-image: var(--code-background-image);
+  margin: 10px;
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  user-select: all;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed var(--secondary-text-and-border-color);
+  width: 30%;
+  margin: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+figure:hover, figure:hover h2 {
+  box-shadow: inset 0px 0px 8px var(--main-text-color), 0 0 15px var(--main-text-color);
+}
+
+figcaption {
+  color: var(--main-text-color);
+  margin-left: 10px;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  user-select: all;
+}
+
+@media only screen and (max-width: 991px) {
+  figure {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  figure {
+    width: 90%;
+  }
+}
